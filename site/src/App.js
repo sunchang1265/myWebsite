@@ -1,11 +1,12 @@
 import React from "react";
-import ReactDOM from "react-dom";
+const arr = [1, 2, 3];
+const test = () => console.log(...arr);
 const App = () => {
-  return (
-    <div>
-      <p>React here!</p>
-    </div>
-  );
+    test();
+    return (
+        <div>
+            <p>React here!</p>
+        </div>
+    );
 };
 export default App;
-ReactDOM.render(<App />, document.getElementById("app"));
