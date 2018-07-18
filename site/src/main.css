@@ -9,3 +9,12 @@ body{
     position: relative;
     height: auto;
 }
+
+.right-section-content{
+    margin: 7vh 0 0 2vw;
+    color: rgb(62, 91, 105);
+}
+.right-section-content-blue{
+    margin: 7vh 0 0 2vw;
+    color: white
+}

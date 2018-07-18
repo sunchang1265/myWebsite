@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.css";
-import Img from "../images/male.png";
+import img_male from "../images/male.png";
 
 class About extends React.Component {
     render(){
@@ -9,10 +9,10 @@ class About extends React.Component {
             <div id="about">
                 <div className="left-section">
                     <h2>About</h2>
-                    <img id="about-img" src={Img} />
+                    <img id="about-img" src={img_male} />
                 </div>
                 <div className="right-section">
-                    <div id="self-intro">
+                    <div className="right-section-content">
                         <h3>Chang Sun</h3>
                         <p>Offering rich responsive user interface to help solve business problems is what I do best.</p>
                         <p>Capable writing in JavaScript, CSS, also familiar with AngualarJS and ReactJS for web application front-end development.</p>
