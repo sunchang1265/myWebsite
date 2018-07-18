@@ -1,5 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./App";
 
-ReactDOM.render(<App />, document.getElementById("app"));
+import "./main.css";
+import Header from "./Header/Header";
+import About from "./About/About";
+
+ReactDOM.render(
+    <div id="main-container">
+        <Header />
+        <About />
+    </div>, 
+    document.getElementById("app"));

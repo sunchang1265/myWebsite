@@ -1,0 +1,19 @@
+#about{
+    background: white;
+    display:flex;
+}
+#about > .left-section{
+    flex: 2;
+    height: 20vh;
+    line-height: 20vh;
+    text-align: center;
+    background: lightyellow;
+}
+#about > .right-section{
+    flex: 3;
+    height: 20vh;
+    background: lightcyan;
+}
+#about-img{
+    width: 2vw;    
+}   
