@@ -1,14 +1,29 @@
 import React from "react";
 import "./Experience.css";
 import img_exp from "../images/experience.png";
+import Popup from "./Popup/Popup";
 
 class Experience extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            displayPopup: false
+        };
+        //this.showPopup = this.showPopup.bind(this);
+    }
 
+    togglePopup(){
+        this.setState({
+            displayPopup: !this.state.displayPopup
+        });
+    }
 
     render(){
+        let popUp = this.state.displayPopup ? <Popup closePopup={()=>this.togglePopup()}/> : null;
         return (
             
-            <div id="experience">
+            <div id="experience" className="section-container section-container-blue">
+                {popUp}
                 <div className="left-section">
                     <h2>Experience</h2>
                     <img id="about-img" src={img_exp} />
@@ -25,10 +40,10 @@ class Experience extends React.Component {
                         <p>&#9679; Experience in implementing data visualization with JavaScript libraries. (Dojo.js, D3.js and AmCharts) </p>   
 
                         {/* <hr /> */}                        
-                        <div className="experience-box">
-                            <div>Securiport</div>
-                            <div>Jun 2014 - Present</div>
-                            <div>Software Engineer</div>
+                        <div className="experience-box" onClick={()=>this.togglePopup()}>
+                            <div className="experience-title">Securiport LLC</div>
+                            <div className="experience-position">Software Engineer</div>
+                            <div className="experience-time">Jun 2014 - Present</div>
                         </div>
                     </div>
                 </div>

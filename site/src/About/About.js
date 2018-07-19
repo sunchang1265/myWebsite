@@ -6,17 +6,17 @@ class About extends React.Component {
     render(){
         return (
             
-            <div id="about">
+            <div id="about" className="section-container">
                 <div className="left-section">
-                    <h2>About</h2>
+                    <h2 className="left-section-title-blue">About</h2>
                     <img id="about-img" src={img_male} />
                 </div>
                 <div className="right-section">
-                    <div className="right-section-content">
+                    <div className="right-section-content" id="about-right-content">
                         <h3>Chang Sun</h3>
                         <p>Offering rich responsive user interface to help solve business problems is what I do best.</p>
                         <p>Capable writing in JavaScript, CSS, also familiar with AngualarJS and ReactJS for web application front-end development.</p>
-                        <p>I also speak to databases and make servers do stuff with C# .NET and NodeJS with SQL or NoSQL databases.
+                        <p>I also speak to databases and make servers do stuff with C# .NET and NodeJS for SQL or NoSQL databases.
                            I like working on scalability, performance, reusability, and great user experiences.
                         </p>
                         <p> 

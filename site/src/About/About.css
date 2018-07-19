@@ -1,28 +1,17 @@
-#about{
-    background: white;
-    display:flex;
-}
 #about > .left-section{
-    flex: 1.5;
     height: 30vh;
-    text-align: center;
 }
 #about > .right-section{
-    flex: 3;
     height: 30vh;
 }
 #about-img{
     width: 3vw;    
 }   
-#about h2{
-    margin-top: 7vh;   
+#about h2{   
     color: rgba(34,125,170,1);
     font-size: 2.5em;
 }
-.right-section-content > h3{
-    font-size: 1.5em;
-}
-.right-section-content > p{
-    font-weight: bold;
-    color: rgb(118, 130, 136);
+#about-right-content{
+    max-height: 28vh;
+    overflow-y: auto;
 }

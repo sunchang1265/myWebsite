@@ -5,7 +5,7 @@
     height: 70vh;
     overflow-y: auto;
     color: white;
-    background: linear-gradient( rgba(34,125,170,1), rgb(115, 165, 190));
+    background: linear-gradient( rgba(34,125,170,1), rgb(100, 157, 185));
 }
 #header > div{
     margin: 5vh 0 0 5vw;

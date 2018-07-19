@@ -1,29 +1,35 @@
-#experience{
-    background: linear-gradient( rgb(115, 165, 190), rgba(34,125,170,1));
-    color: white;
-    display:flex;
-}
-#experience > .left-section{
-    flex: 1.5;
-    text-align: center;
-}
-#experience > .right-section{
-    flex: 3;
-}
+
 #experience-img{
     width: 3vw;    
 }   
 #experience h2{
-    margin-top: 7vh;   
     font-size: 2.5em;
 }
 #exp-right-section{
     color:white;
 }
 .experience-box{
+    position: relative;
     width: 90%;
     padding: 1.5vw;
-    margin-top: 3vh;
+    margin: 3vh 0;
     border: 1px solid white;
     border-radius: 10px;
+    cursor: pointer;
+}
+.experience-title{
+    font-size: 2em;
+}
+.experience-time{
+    position: absolute;
+    display: inline-block;
+    right: 1vw;
+    height: 3vh;
+    line-height: 3vh;
+}
+.experience-position{
+    display: inline-block;
+    font-size: 1.5em;
+    height: 3vh;
+    line-height: 3vh;
 }

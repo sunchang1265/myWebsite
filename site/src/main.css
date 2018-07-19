@@ -10,11 +10,41 @@ body{
     height: auto;
 }
 
+.section-container{
+    display: flex;
+}
+.section-container-blue{
+    background: linear-gradient(  rgba(34,125,170,1), rgb(100, 157, 185));
+    color: white;
+}
+.left-section{
+    flex: 1.5;
+    text-align: center;
+}
+.left-section>h2{
+    font-size: 2.5em;    
+}
+.left-section-title-blue{   
+    color: rgba(34,125,170,1);
+}
+.right-section{
+    flex: 3;
+}
+
 .right-section-content{
-    margin: 7vh 0 0 2vw;
+    margin: 2vh 0 0 2vw;
     color: rgb(62, 91, 105);
 }
 .right-section-content-blue{
-    margin: 7vh 0 0 2vw;
+    margin: 2vh 0 0 2vw;
     color: white
+}
+
+.right-section-content > h3{
+    font-size: 1.5em;
+}
+.right-section-content > p{
+    font-weight: bold;
+    color: rgb(118, 130, 136);
+    margin: 0.5em 0;
 }
