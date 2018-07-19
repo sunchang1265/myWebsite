@@ -12,5 +12,25 @@
     margin-left: 25vw;
     width: 50vw;
     height: 80vh;
+    padding: 1vw;
+    overflow-y: auto;
     background: white;
+}
+.pop-section{
+    color: rgb(62, 91, 105);
+    padding: 2vh 0 1vh 0;
+    border-bottom: 1px dotted rgba(34,125,170,1);
+}
+.pop-title{
+    font-size: 2em;
+    font-weight: bold;
+}
+.pop-subtitle{
+    font-size: 1.2em;
+    margin: 0.5vh 0 1vh 1vw;
+    text-align: right;
+}
+.pop-section p{
+    font-size: 1em;
+    margin: 0.5em;
 }
