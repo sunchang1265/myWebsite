@@ -1,6 +1,6 @@
 import React from "react";
 import "./Experience.css";
-import img_exp from "../images/experience.png";
+import img_exp from "../images/exp-icon.png";
 import Popup from "./Popup/Popup";
 
 class Experience extends React.Component {
@@ -29,7 +29,7 @@ class Experience extends React.Component {
                             "- Participated in developing eGate Terminal application to provide an ability to make the hardware gate work as a state machine.",
                             "- Simplify the code to make eGate application be able to restructure the enrollment process easily based on configuration",
                             "- Created eGate Monitor application to monitor activities and performance of the gate application.",
-                            "- Provided ability for eGate Monitor to communicate with eGate hardware via web socket for real time monitoring.",                            
+                            "- Provided ability for eGate Monitor to communicate with eGate hardware via web socket for real time monitoring.",
                         ]
                     },
                     {
@@ -59,7 +59,7 @@ class Experience extends React.Component {
                             "- Created several reusable interactive modules with JavaScript that can be nested into windows form applications.",
                             "- In charge of daily .NET entity framework data model update based on database changes, guaranteed all developers having latest data model mapping to database.",
                             "- Participated in creating SQL stored procedures to provide quick and efficient data reading for front end code use in database.",
-                            "- Developed performance tests console application for IICS. Accomplished pressures test by running the test application and helped improve performance of enrollments for IICS.",                            
+                            "- Developed performance tests console application for IICS. Accomplished pressures test by running the test application and helped improve performance of enrollments for IICS.",
                         ]
                     }
                 ],
@@ -70,7 +70,7 @@ class Experience extends React.Component {
                         duties: [
                             "- Participated in the development of online petition reception system of discipline inspection for city authority.",
                             "- In charge of tests as software test Engineer. Including testing user interface, functionality and performance testing.",
-                            "- Met customers and introduced how to use this software as an instructor and collected users’ feedback."                       
+                            "- Met customers and introduced how to use this software as an instructor and collected users’ feedback."
                         ]
                     }
                 ]
@@ -78,23 +78,22 @@ class Experience extends React.Component {
         };
     }
 
-    togglePopup(value){
+    togglePopup(value) {
         this.setState({
             displayPopup: !this.state.displayPopup,
             displayData: this.state.data[value]
         });
     }
 
-    render(){        
-        let popUp = this.state.displayPopup ? <Popup detail={this.state.displayData} closePopup={()=>this.togglePopup()}/> : null;
-        console.log(this.state.data);
+    render() {
+        let popUp = this.state.displayPopup ? <Popup detail={this.state.displayData} closePopup={() => this.togglePopup()} /> : null;
         return (
-            
+
             <div id="experience" className="section-container section-container-blue">
                 {popUp}
                 <div className="left-section">
                     <h2>Experience</h2>
-                    <img id="about-img" src={img_exp} />
+                    <img className="left-section-img" src={img_exp} />
                 </div>
                 <div className="right-section">
                     <div className="right-section-content-blue">
@@ -105,14 +104,14 @@ class Experience extends React.Component {
                         <p>&#9679; Having solid skills in developing windows forms applications and front-end development. </p>
                         <p>&#9679; Familiar with object oriented programming and agile development methodology.  </p>
                         <p>&#9679; Experience in SQL server and MongoDB. </p>
-                        <p>&#9679; Experience in implementing data visualization with JavaScript libraries. (Dojo.js, D3.js and AmCharts) </p>   
-                        
-                        <div className="experience-box" onClick={()=>this.togglePopup('Securiport')} >
+                        <p>&#9679; Experience in implementing data visualization with JavaScript libraries. (Dojo.js, D3.js and AmCharts) </p>
+
+                        <div className="experience-box" onClick={() => this.togglePopup('Securiport')} >
                             <div className="experience-title">Securiport LLC, Washington DC</div>
                             <div className="experience-position">Software Engineer</div>
                             <div className="experience-time">Jun 2014 - Present</div>
                         </div>
-                        <div className="experience-box" onClick={()=>this.togglePopup('Hongcheng')} >
+                        <div className="experience-box" onClick={() => this.togglePopup('Hongcheng')} >
                             <div className="experience-title">Hongcheng Information Technology Co., Ltd, Jiangsu, China</div>
                             <div className="experience-position">Programmer Intern</div>
                             <div className="experience-time">Feb 2013 - Apr 2013</div>

@@ -9,7 +9,7 @@ class About extends React.Component {
             <div id="about" className="section-container">
                 <div className="left-section">
                     <h2 className="left-section-title-blue">About</h2>
-                    <img id="about-img" src={img_male} />
+                    <img className="left-section-img" src={img_male} />
                 </div>
                 <div className="right-section">
                     <div className="right-section-content" id="about-right-content">

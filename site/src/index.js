@@ -7,6 +7,7 @@ import About from "./About/About";
 import Experience from "./Experience/Experience";
 import Skillset from "./Skillset/Skillset";
 import Education from "./Education/Education";
+import Contact from "./Contact/Contact";
 
 ReactDOM.render(
     <div id="main-container">
@@ -15,5 +16,6 @@ ReactDOM.render(
         <Experience />
         <Skillset />
         <Education />
+        <Contact />
     </div>, 
     document.getElementById("app"));

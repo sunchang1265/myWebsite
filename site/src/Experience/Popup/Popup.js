@@ -2,15 +2,13 @@ import React from "react";
 import "./Popup.css";
 
 class Popup extends React.Component {
-    
 
-
-    render(){
+    render() {
         let detail = this.props.detail;
         let sections = [];
-        for(let i=0; i<detail.length; i++){
-            
-            let duties = detail[i].duties.map((duty) => 
+        for (let i = 0; i < detail.length; i++) {
+
+            let duties = detail[i].duties.map((duty) =>
                 <p key={duty}>{duty}</p>
             );
 
