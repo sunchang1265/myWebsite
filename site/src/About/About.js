@@ -13,7 +13,7 @@ class About extends React.Component {
                 </div>
                 <div className="right-section">
                     <div className="right-section-content" id="about-right-content">
-                        <h3>Chang Sun</h3>
+                        <h2>Chang Sun</h2>
                         <p>Offering rich responsive user interface to help solve business problems is what I do best.</p>
                         <p>Capable writing in JavaScript, CSS, also familiar with AngualarJS and ReactJS for web application front-end development.</p>
                         <p>I also speak to databases and make servers do stuff with C# .NET and NodeJS for SQL or NoSQL databases.

@@ -13,9 +13,12 @@
     width: 90%;
     padding: 1.5vw;
     margin: 3vh 0;
-    border: 1px solid white;
+    border: 1px solid #89bbd3;
     border-radius: 10px;
     cursor: pointer;
+}
+.experience-box:hover{
+    background: #abcbda48;
 }
 .experience-title{
     font-size: 2em;

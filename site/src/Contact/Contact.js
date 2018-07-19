@@ -7,9 +7,9 @@ class Contact extends React.Component {
     render() {
         return (
 
-            <div id="Education" className="section-container">
+            <div id="Contact" className="section-container">
                 <div className="left-section">
-                    <h2>Contact</h2>
+                    <h2 className="left-section-title-blue">Contact</h2>
                     <img className="left-section-img" src={mail_img} />
                 </div>
                 <div className="right-section">

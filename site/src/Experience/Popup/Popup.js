@@ -2,7 +2,9 @@ import React from "react";
 import "./Popup.css";
 
 class Popup extends React.Component {
-
+    constructor(props){
+        super(props);
+    }
     render() {
         let detail = this.props.detail;
         let sections = [];
@@ -13,7 +15,7 @@ class Popup extends React.Component {
             );
 
             sections.push(
-                <div className="pop-section">
+                <div className="pop-section" key={i}>
                     <div className="pop-title">{detail[i].project}</div>
                     <div className="pop-subtitle">{detail[i].intro}</div>
                     {duties}
@@ -22,7 +24,7 @@ class Popup extends React.Component {
         }
         return (
             <div id="Popup" onClick={this.props.closePopup}>
-                <div id="pop-container">
+                <div id="pop-container" onClick={(event)=>event.stopPropagation()}>
                     {sections}
                 </div>
             </div>
